@@ -1,0 +1,20 @@
+//// UPLOAD YOUR PROJECT ON GITHUB /////
+touch.gitignore
+git config --global user.name Ahsan
+git config --global user.email "muhammadahsan2015@gmail.com"
+git init
+git add .
+git commit -m "Initial commit"
+git status #Just to See
+git remote add origin git@github.com:Ahsan-Siddiqui/unibroApp.git
+git push origin master
+ssh-keygen -t -b 4096 -C "muhammadahsan2015@gmail.com"
+tail <path to id_rsa.pub> # add this key to your Github account
+git remote add origin <ssh url.git>
+git push origin master
+
+///  WHEN YOU DO ANY CHANGE YOU HAVE TO DO ONLY THESE STEPS  ///
+git status #Just to see the changes in red color
+git add .
+git commit -m "ChangesSuccessfully"
+git push origin master
